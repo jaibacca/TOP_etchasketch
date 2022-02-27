@@ -58,12 +58,14 @@ function clearScreen() {
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("square_x");
-output.innerHTML = slider.value; // Display the default slider value
+var userSquare = slider.value;
+output.innerHTML = slider.value + 'x' + slider.value ; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
-  output.innerHTML = this.value;
-  createScreen(this.value);
+  output.innerHTML = this.value + 'x' + this.value;
+  userSquare = this.value;
+  //createScreen(this.value);
 } 
 
 function removeAllChildNodes(parent) {
