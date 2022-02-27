@@ -65,7 +65,6 @@ output.innerHTML = slider.value + 'x' + slider.value ; // Display the default sl
 slider.oninput = function() {
   output.innerHTML = this.value + 'x' + this.value;
   userSquare = this.value;
-  //createScreen(this.value);
 } 
 
 function removeAllChildNodes(parent) {
