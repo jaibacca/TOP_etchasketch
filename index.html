@@ -7,8 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container"></div>
-  <button class="clear-button">Clear</button>
-  <input class="input-dimension">
+  <div class="fullscreen">
+    <div class="container" id="etchasketch"></div>
+    <div id="controls">
+      <button class="clear-button" onclick="clearScreen()">Clear</button>
+      <div id="square_x"></div>
+      <div class="slidecontainer">
+        <input type="range" min="2" max="100" value="25" class="slider" id="myRange">
+      </div>
+    </div> 
+  </div>
+  
 </body>
 </html>

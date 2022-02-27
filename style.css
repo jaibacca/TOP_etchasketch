@@ -1,3 +1,7 @@
+.fullscreen{
+    display: flex;
+}
+
 .container {
     width: 700px;
     height: 700px;
@@ -12,13 +16,22 @@
 }
 
 .pixelDiv {
-
+    border: 1px solid black;
 }
 
 .white {
-    
+    background-color: white;
 }
 
 .black {
+    background-color: black;
+}
 
+#etchasketch {
+    display: grid;
+    
+}
+
+#controls {
+    
 }
